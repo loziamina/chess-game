@@ -19,7 +19,7 @@ const Tile = ({ isEven, label, rowIndex, colIndex, onMove, selectedPiece }) => {
       className={`tile ${isEven ? "bg-blue-200" : "bg-white"} flex items-center justify-center ${
         isClicked ? "clicked" : ""
       } ${selectedPiece && selectedPiece.rowIndex === rowIndex && selectedPiece.colIndex === colIndex ? "selected" : ""}`}
-  
+      style={{ width: "80px", height: "80px" }}
       onClick={handleClick}
       label={label}
     ></Button>
